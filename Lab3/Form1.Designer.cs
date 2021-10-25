@@ -29,6 +29,7 @@ namespace Lab3
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ComboBoxMath = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxFirstNumber = new System.Windows.Forms.TextBox();
@@ -53,10 +54,10 @@ namespace Lab3
             "+",
             "-",
             "*"});
-            this.ComboBoxMath.Location = new System.Drawing.Point(236, 185);
-            this.ComboBoxMath.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ComboBoxMath.Location = new System.Drawing.Point(270, 234);
+            this.ComboBoxMath.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.ComboBoxMath.Name = "ComboBoxMath";
-            this.ComboBoxMath.Size = new System.Drawing.Size(35, 27);
+            this.ComboBoxMath.Size = new System.Drawing.Size(39, 27);
             this.ComboBoxMath.TabIndex = 0;
             this.ComboBoxMath.Visible = false;
             this.ComboBoxMath.SelectionChangeCommitted += new System.EventHandler(this.MathChanged);
@@ -65,8 +66,8 @@ namespace Lab3
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(180, 154);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(206, 195);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 19);
             this.label1.TabIndex = 1;
@@ -76,10 +77,10 @@ namespace Lab3
             // textBoxFirstNumber
             // 
             this.textBoxFirstNumber.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBoxFirstNumber.Location = new System.Drawing.Point(28, 69);
-            this.textBoxFirstNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxFirstNumber.Location = new System.Drawing.Point(32, 87);
+            this.textBoxFirstNumber.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxFirstNumber.Name = "textBoxFirstNumber";
-            this.textBoxFirstNumber.Size = new System.Drawing.Size(145, 26);
+            this.textBoxFirstNumber.Size = new System.Drawing.Size(165, 26);
             this.textBoxFirstNumber.TabIndex = 2;
             this.textBoxFirstNumber.TextChanged += new System.EventHandler(this.MathChanged);
             this.textBoxFirstNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxFirstNumber_KeyPress);
@@ -87,10 +88,10 @@ namespace Lab3
             // textBoxSecondNumber
             // 
             this.textBoxSecondNumber.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBoxSecondNumber.Location = new System.Drawing.Point(279, 69);
-            this.textBoxSecondNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxSecondNumber.Location = new System.Drawing.Point(319, 87);
+            this.textBoxSecondNumber.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxSecondNumber.Name = "textBoxSecondNumber";
-            this.textBoxSecondNumber.Size = new System.Drawing.Size(143, 26);
+            this.textBoxSecondNumber.Size = new System.Drawing.Size(163, 26);
             this.textBoxSecondNumber.TabIndex = 3;
             this.textBoxSecondNumber.TextChanged += new System.EventHandler(this.MathChanged);
             this.textBoxSecondNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSecondNumber_KeyPress);
@@ -99,8 +100,8 @@ namespace Lab3
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(28, 44);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(32, 56);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 19);
             this.label2.TabIndex = 4;
@@ -111,8 +112,8 @@ namespace Lab3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(279, 44);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(319, 56);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 19);
             this.label3.TabIndex = 5;
@@ -121,6 +122,7 @@ namespace Lab3
             // 
             // comboBoxSecondSystem
             // 
+            this.comboBoxSecondSystem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBoxSecondSystem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSecondSystem.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.comboBoxSecondSystem.FormattingEnabled = true;
@@ -129,15 +131,16 @@ namespace Lab3
             "8",
             "10",
             "16"});
-            this.comboBoxSecondSystem.Location = new System.Drawing.Point(370, 106);
-            this.comboBoxSecondSystem.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.comboBoxSecondSystem.Location = new System.Drawing.Point(423, 134);
+            this.comboBoxSecondSystem.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBoxSecondSystem.Name = "comboBoxSecondSystem";
-            this.comboBoxSecondSystem.Size = new System.Drawing.Size(52, 27);
+            this.comboBoxSecondSystem.Size = new System.Drawing.Size(59, 27);
             this.comboBoxSecondSystem.TabIndex = 7;
             this.comboBoxSecondSystem.SelectionChangeCommitted += new System.EventHandler(this.comboBoxSecondSystem_SelectionChangeCommitted);
             // 
             // comboBoxFirstSystem
             // 
+            this.comboBoxFirstSystem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBoxFirstSystem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFirstSystem.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.comboBoxFirstSystem.FormattingEnabled = true;
@@ -146,10 +149,10 @@ namespace Lab3
             "8",
             "10",
             "16"});
-            this.comboBoxFirstSystem.Location = new System.Drawing.Point(121, 106);
-            this.comboBoxFirstSystem.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.comboBoxFirstSystem.Location = new System.Drawing.Point(138, 134);
+            this.comboBoxFirstSystem.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBoxFirstSystem.Name = "comboBoxFirstSystem";
-            this.comboBoxFirstSystem.Size = new System.Drawing.Size(52, 27);
+            this.comboBoxFirstSystem.Size = new System.Drawing.Size(59, 27);
             this.comboBoxFirstSystem.TabIndex = 8;
             this.comboBoxFirstSystem.SelectionChangeCommitted += new System.EventHandler(this.comboBoxFirstSystem_SelectionChangeCommitted);
             // 
@@ -157,8 +160,8 @@ namespace Lab3
             // 
             this.LabelAnswer.AutoSize = true;
             this.LabelAnswer.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LabelAnswer.Location = new System.Drawing.Point(84, 243);
-            this.LabelAnswer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LabelAnswer.Location = new System.Drawing.Point(96, 308);
+            this.LabelAnswer.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LabelAnswer.Name = "LabelAnswer";
             this.LabelAnswer.Size = new System.Drawing.Size(0, 23);
             this.LabelAnswer.TabIndex = 9;
@@ -166,8 +169,10 @@ namespace Lab3
             // radioButtonMath
             // 
             this.radioButtonMath.AutoSize = true;
+            this.radioButtonMath.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonMath.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButtonMath.Location = new System.Drawing.Point(12, 185);
+            this.radioButtonMath.Location = new System.Drawing.Point(14, 234);
+            this.radioButtonMath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButtonMath.Name = "radioButtonMath";
             this.radioButtonMath.Size = new System.Drawing.Size(198, 23);
             this.radioButtonMath.TabIndex = 10;
@@ -179,6 +184,7 @@ namespace Lab3
             // comboBoxCompare
             // 
             this.comboBoxCompare.BackColor = System.Drawing.SystemColors.Menu;
+            this.comboBoxCompare.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBoxCompare.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCompare.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.comboBoxCompare.FormattingEnabled = true;
@@ -189,10 +195,10 @@ namespace Lab3
             "<",
             "≤",
             "≥"});
-            this.comboBoxCompare.Location = new System.Drawing.Point(236, 185);
-            this.comboBoxCompare.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.comboBoxCompare.Location = new System.Drawing.Point(270, 234);
+            this.comboBoxCompare.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBoxCompare.Name = "comboBoxCompare";
-            this.comboBoxCompare.Size = new System.Drawing.Size(35, 27);
+            this.comboBoxCompare.Size = new System.Drawing.Size(39, 27);
             this.comboBoxCompare.TabIndex = 12;
             this.comboBoxCompare.Visible = false;
             this.comboBoxCompare.SelectionChangeCommitted += new System.EventHandler(this.MathChanged);
@@ -200,8 +206,10 @@ namespace Lab3
             // radioButtonCompare
             // 
             this.radioButtonCompare.AutoSize = true;
+            this.radioButtonCompare.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonCompare.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButtonCompare.Location = new System.Drawing.Point(304, 185);
+            this.radioButtonCompare.Location = new System.Drawing.Point(347, 234);
+            this.radioButtonCompare.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButtonCompare.Name = "radioButtonCompare";
             this.radioButtonCompare.Size = new System.Drawing.Size(160, 23);
             this.radioButtonCompare.TabIndex = 13;
@@ -212,9 +220,9 @@ namespace Lab3
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 296);
+            this.ClientSize = new System.Drawing.Size(544, 375);
             this.Controls.Add(this.radioButtonCompare);
             this.Controls.Add(this.comboBoxCompare);
             this.Controls.Add(this.radioButtonMath);
@@ -227,10 +235,12 @@ namespace Lab3
             this.Controls.Add(this.textBoxFirstNumber);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ComboBoxMath);
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Калькулятор систем счисления";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
