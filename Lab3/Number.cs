@@ -33,7 +33,7 @@ namespace Lab3
         {
             ulong newFirst = Convert.ToUInt64(first.Num, first.NumberSystem);
             ulong newSecond = Convert.ToUInt64(second.Num, second.NumberSystem);
-            return new Number((newFirst - newSecond).ToString(), 10);
+            return new Number(((long)(newFirst - newSecond)).ToString(), 10);
         }
 
         public static Number operator *(Number first, Number second)
@@ -54,35 +54,35 @@ namespace Lab3
         {
             ulong newFirst = Convert.ToUInt64(first.Num, first.NumberSystem);
             ulong newSecond = Convert.ToUInt64(second.Num, second.NumberSystem);
-            return newFirst == newSecond;
+            return newFirst != newSecond;
         }
 
         public static bool operator <(Number first, Number second)
         {
             ulong newFirst = Convert.ToUInt64(first.Num, first.NumberSystem);
             ulong newSecond = Convert.ToUInt64(second.Num, second.NumberSystem);
-            return newFirst == newSecond;
+            return newFirst < newSecond;
         }
         
         public static bool operator >(Number first, Number second)
         {
             ulong newFirst = Convert.ToUInt64(first.Num, first.NumberSystem);
             ulong newSecond = Convert.ToUInt64(second.Num, second.NumberSystem);
-            return newFirst == newSecond;
+            return newFirst > newSecond;
         }
 
         public static bool operator >=(Number first, Number second)
         {
             ulong newFirst = Convert.ToUInt64(first.Num, first.NumberSystem);
             ulong newSecond = Convert.ToUInt64(second.Num, second.NumberSystem);
-            return newFirst == newSecond;
+            return newFirst >= newSecond;
         }
 
         public static bool operator <=(Number first, Number second)
         {
             ulong newFirst = Convert.ToUInt64(first.Num, first.NumberSystem);
             ulong newSecond = Convert.ToUInt64(second.Num, second.NumberSystem);
-            return newFirst == newSecond;
+            return newFirst <= newSecond;
         }
     }
 }
